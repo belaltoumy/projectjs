@@ -1,0 +1,53 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 class="h1">Productes List </h1>
+  <div class="products-container" id="products-container" ></div>
+  <button class="add-product-button" onclick="showNewProductForm()"> Add New Product </button>
+  <div class="form-container" id="new-product-form" style="display: none;">
+    <h2 class="h2"> Add New product </h2>
+    <form class="product-form" id="product-form">
+      <div class="form-field">
+        <label for="name">product Name :</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-field">
+        <label for="brand">product Mark :</label>
+        <input type="text" id="brand" name="brand" required>
+      </div>
+      <div class="form-field">
+        <label for="category">category:</label>
+        <input type="text" id="category" name="category" required>
+      </div>
+      <div class="form-field">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+      </div>
+      <div class="form-field">
+        <label for="price">price:</label>
+        <input type="number" id="price" name="price" required>
+      </div>
+      <div class="form-field">
+        <label for="image"> product Image:</label>
+        <input type="url" id="image" name="image" required>
+      </div>
+      <div class="form-submit">
+        <button type="button" class="btn1" onclick="addProduct()">Ok</button>
+        <button type="button" class="btn2" onclick="cancelAddProduct()">Cancel</button>
+      </div>
+    </form>
+  </div> 
+  <script src="prod.js"></script>
+</body>
+</html>
+
+
+
